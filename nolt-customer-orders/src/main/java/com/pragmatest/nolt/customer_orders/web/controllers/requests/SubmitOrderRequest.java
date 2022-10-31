@@ -4,7 +4,7 @@ import java.util.List;
 
 public class SubmitOrderRequest {
 
-    private List<OrderItem> orderItems;
+    private List<OrderItem> orderItems; //list of OrderItem objects
 
     public SubmitOrderRequest(List<OrderItem> orderItems) {
         this.orderItems = orderItems;
@@ -12,6 +12,8 @@ public class SubmitOrderRequest {
 
     public SubmitOrderRequest() {
     }
+
+    // Getters and Setters
 
     public List<OrderItem> getOrderItems() {
         return orderItems;

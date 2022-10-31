@@ -21,10 +21,12 @@ public class CustomerOrdersService {
     @Autowired
     ModelMapper mapper;
 
+    // service layer also has its own model - separation of different models across layers
+    //return order id and save this to a database
     public String submitOrder(Order order) {
         OrderEntity orderEntity = mapper.map(order, OrderEntity.class);
-        orderEntity.setId(UUID.randomUUID().toString());
-        orderEntity = repository.save(orderEntity);
+        orderEntity.setId(UUID.randomUUID().toString()); //after validation of balance, order acceptance, and more business logic...
+        orderEntity = repository.save(orderEntity); //saving an object of OrderEntity type to the repository
         return orderEntity.getId();
     }
 

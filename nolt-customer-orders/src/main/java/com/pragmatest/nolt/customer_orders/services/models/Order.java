@@ -8,6 +8,8 @@ public class Order {
     private String customerId;
     private List<OrderItem> orderItems;
 
+    // Getters and Setters
+
     public String getId() {
         return id;
     }

@@ -15,6 +15,7 @@ public class OrderItem {
     public OrderItem() {
     }
 
+    // getters and setters
     public String getMenuItemId() {
         return menuItemId;
     }

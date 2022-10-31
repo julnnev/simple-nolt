@@ -11,6 +11,10 @@ public class CustomerOrdersApplication {
 
     public static void main(String[] args) throws InterruptedException {
         ConfigurableApplicationContext context = SpringApplication.run(CustomerOrdersApplication.class, args);
+
+        // no end points exposed
+        // we need a layer to expose the microservice functionality
+        // we need a new package
     }
 
 }

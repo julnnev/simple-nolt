@@ -6,6 +6,10 @@ public class OrderItem {
     private int quantity;
     private String notes;
 
+    // Although models might be similar today, keep them separate across layers!
+    // Don't sacrifice less classes and code for readability and maintainability
+
+
     public String getMenuItemId() {
         return menuItemId;
     }

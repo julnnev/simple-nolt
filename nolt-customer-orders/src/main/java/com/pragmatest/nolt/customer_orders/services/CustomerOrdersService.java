@@ -28,4 +28,16 @@ public class CustomerOrdersService {
     //TODO 2. Add a method to get an existing order.
     //What are the parameters that are required to identify a specific order
     //for a specific customer?
+
+    public Order getOrder(String customerId, String orderId){
+        OrderEntity order = new OrderEntity();
+        order.setCustomerId(customerId);
+        order.setId(orderId);
+
+
+
+
+
+
+    }
 }
